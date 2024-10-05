@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" <head>
+<title>Calculator</title>
+<style>
+    h1 {
+        color: blue;
+        text-align: center;
+    }
+
+    img.calculator-image {
+        display: block;
+      
+        width: 300px;
+        height: 400px;
+    }
+
+    .input-feild,
+    .dropdown,
+    .button-container {
+        margin-left: 20px;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .button-container img {
+        width: 80px;
+        height: 80px;
+        text-align: left;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <img src="calculator.png" alt="Calculator Header" class="calculator-image">
+    <div class="input-feild">
+        <label for="input1">Input1</label>
+        <input type="number" id="input1" name="input1">
+    </div>
+
+    <div class="input-feild">
+        <label for="input2">Input2</label>
+        <input type="number" id="input2" name="input2">
+    </div>
+
+    <div class="dropdown">
+        <label for="operation">Select Operation</label>
+        <select id="operation" name="operation">
+            <option value="select">Select...</option>
+            <option value="add">ADD</option>
+            <option value="subtract">SUBTRACT</option>
+            <option value="multiply">MULTIPLY</option>
+            <option value="devide">DIVIDE</option>
+        </select>
+    </div>
+
+    <div class="button-container">
+        <button type="submit"><img src="submit.jpg" alt="Submit Button"></button>
+        <button type="reset"><img src="reset.png" alt="Reset Button"></button>
+    </div>
+</body>
