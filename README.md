@@ -14,4 +14,4 @@ Assessment 3
 ![Screenshot 2024-10-07 170521](https://github.com/user-attachments/assets/19868ebc-e086-4ee8-ad82-1cf5aab8191b)
 ![Screenshot 2024-10-07 170731](https://github.com/user-attachments/assets/804f7ce5-8f22-4a9c-9725-c2051227b988)
 Note:
-Mam as I was using office wifi, it refuses to connect with the youtube.
+Mam as I was using office wifi, it refuses to connect with the youtube. It will load Youtube video and work fine in other devices.
