@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookzone Library - Book Form</title>
+</head>
+
+<body>
+    <h1>A Simple Form</h1>
+    <h2>Form Fundamentals</h2>
+
+    <form autocomplete="on" onsubmit="return submitForm()">
+
+        <fieldset>
+            <legend>Customer Info</legend>
+
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="telephone">Telephone: </label><br>
+            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="Pattern 234-567-8910"
+                required><br><br>
+
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email address" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+
+            <label for="book">Choose a book: </label>
+            <input type="text" id="book" name="book" required>
+            &nbsp;&nbsp;
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <script>
+        function submitForm() {
+            alert("You have successfully submitted the Book Form");
+            return false
+        }
+    </script>
+</body>
+
+</html>
