@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+      
+        .about-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            margin-bottom: 20px;
+        }
+
+       
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .about-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-grid .text {
+            text-align: left;
+        }
+
+      
+        .product-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .product-section h2 {
+            margin-bottom: 20px;
+        }
+
+      
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-grid .price {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+        }
+
+   
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+  
+        .about-grid img {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .product-grid img {
+            animation: slideIn 1s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+ 
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+   
+    <section class="about-section">
+        <h2>About Us</h2>
+        <div class="about-grid">
+            <img src="1.jpg" alt="Mobile Image 1">
+            <img src="2.jpg" alt="Mobile Image 2">
+            <div class="text">
+                <h3>Latest Mobile Trends</h3>
+                <p>At our mobile shop, we offer the latest mobile devices from top brands with cutting-edge features, competitive pricing, and great customer service.</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="product-section">
+        <h2>Mobiles</h2>
+        <div class="product-grid">
+            <div>
+                <img src="3.jpg" alt="Mobile 1">
+                <div class="price">iPhone 12 - 70,000 ₹</div>
+            </div>
+            <div>
+                <img src="4.jpg" alt="Mobile 2">
+                <div class="price">Samsung Galaxy S21 - 65,000 ₹</div>
+            </div>
+            <div>
+                <img src="5.jpg" alt="Mobile 3">
+                <div class="price">OnePlus 9 - 50,000 ₹</div>
+            </div>
+            <div>
+                <img src="6.jpg" alt="Mobile 4">
+                <div class="price">Xiaomi Mi 11 - 45,000 ₹</div>
+            </div>
+            <div>
+                <img src="7.jpg" alt="Mobile 5">
+                <div class="price">Google Pixel 5 - 55,000 ₹</div>
+            </div>
+            <div>
+                <img src="8.jpg" alt="Mobile 6">
+                <div class="price">Motorola Edge 20 - 40,000 ₹</div>
+            </div>
+            <div>
+                <img src="9.jpg" alt="Mobile 7">
+                <div class="price">Realme GT - 35,000 ₹</div>
+            </div>
+            <div>
+                <img src="10.jpg" alt="Mobile 8">
+                <div class="price">Vivo V21 - 30,000 ₹</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
